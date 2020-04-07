@@ -1,9 +1,9 @@
 {
   "kind": "collectionType",
   "connection": "default",
-  "collectionName": "brands",
+  "collectionName": "programs",
   "info": {
-    "name": "brand"
+    "name": "program"
   },
   "options": {
     "increments": true,
@@ -17,14 +17,17 @@
       "type": "richtext"
     },
     "image": {
-      "model": "file",
+      "collection": "file",
       "via": "related",
       "plugin": "upload",
       "required": false
     },
-    "programs": {
-      "via": "brand",
-      "collection": "program"
+    "price": {
+      "type": "decimal"
+    },
+    "brand": {
+      "model": "brand",
+      "via": "programs"
     }
   }
 }
