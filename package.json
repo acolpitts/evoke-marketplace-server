@@ -1,8 +1,8 @@
 {
-  "name": "server",
+  "name": "evoke-marketplace-api",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "An open source community engagment platform that uses Stripe for payment processing.",
   "scripts": {
     "dev": "strapi develop",
     "start": "strapi start",
@@ -25,7 +25,7 @@
     "strapi-utils": "3.0.0-beta.19.5"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Adam Colpitts <adam@completeperspective.com>"
   },
   "strapi": {
     "uuid": "78cae8b6-0a93-4891-968a-bf100a91eb66"
@@ -34,5 +34,5 @@
     "node": ">=10.0.0",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "ISC"
 }
